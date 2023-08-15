@@ -26,10 +26,10 @@
     />
   </head>
   <body>
+    <div class="text-center">
+      <h3>Leaflet Canvas Maps</h3>
+    </div>
     <div id="container">
-      <div>
-        <h3>Leaflet Canvas Maps</h3>
-      </div>
       <div>
         <button
           onclick="reloadPage()"
@@ -43,7 +43,11 @@
       <div id="alert" hidden class="alert alert-danger" role="alert">
         This is a danger alert—check it out!
       </div>
+      <div></div>
       <div id="map">
+        <div id="loader" class="spinner-border text-dark" role="status">
+          <span class="sr-only"></span>
+        </div>
         <canvas id="canvas" width="800" height="600"></canvas>
       </div>
     </div>
